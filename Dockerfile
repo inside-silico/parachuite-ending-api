@@ -7,14 +7,18 @@ RUN apt install git -y
 
 WORKDIR /app
 
+COPY . .
+
 COPY requirements.txt requirements.txt
+
 RUN pip3 install -r requirements.txt
+
 RUN pip3 install git+https://github.com/franco-lamas/PyOBD --upgrade --no-cache-dir
 RUN pip3 install git+https://github.com/franco-lamas/SHD --upgrade --no-cache-dir
 RUN pip3 install git+https://github.com/franco-lamas/Fallen --upgrade --no-cache-dir
 
 
 
-COPY . .
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+
+CMD [ "python3","-u", "app.py"]
