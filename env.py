@@ -1,5 +1,5 @@
-db_usr="root"
-db_pass="secret"
-db_host="127.0.0.1"
-db_name="quots"
+db_usr=" "
+db_pass=" "
+db_host=" "
+db_name=" "
 db_port=3306
