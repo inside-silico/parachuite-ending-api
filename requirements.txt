@@ -23,3 +23,5 @@ flask_restful
 lxml
 html5lib
 flask-cors
+sqlalchemy
+pymysql

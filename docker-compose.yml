@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  parachute:
+    image: imperialsys/parachute-ending-api
+    restart: unless-stopped
+    container_name: parachute-ending-api
+    volumes:
+      - ./env.py:/app/env.py
+    ports:
+      - "8090:5000"
+
+
+
+
+
+
+
+
+
