@@ -15,10 +15,6 @@ Parachute Ending toma sus datos desde una base de datos MariaDB/MySQL que debe c
 
 /api/arg/bonds/{settelment}
 
-### Obtener Panel General
-
-/api/arg/galpones/{settelment}
-
 ### Obtener CEDEAR
 
 /api/arg/cedear/{settelment}
@@ -27,14 +23,20 @@ Parachute Ending toma sus datos desde una base de datos MariaDB/MySQL que debe c
 
 /api/arg/options
 
-### Obtener Indices
 
-/api/arg/indices
 
 ### Obtener CCL
 
-/api/arg/cedear-ccl
+/api/arg/ccl
 
-### Obtener Stocks USA
+### Obtener Dolar MEP
 
-/api/us/stocks
+/api/arg/mep
+
+### Obtener Variables de BCRA
+
+/api/arg/bcra
+
+### Obtener valores de Lanzamiento Cubierto
+
+/api/arg/options/lanzamiento/{ticker}
